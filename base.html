@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <form action="" method="post">
+    <div>
+        <div class="label">
+            <label for="author_name">Имя автора</label>
+        </div>
+        <div class="input">
+            <input type="text" name="author_name" id="author_name">
+        </div>
+    </div>
+
+    <div>
+        <input type="submit" value="Добавить">
+    </div>
+
+
+    </form>
+    <form method="post">
+        {% for field in form %}
+
+        {% endfor %}
+    </form>
+
+
+{% endblock %}
